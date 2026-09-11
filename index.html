@@ -20,15 +20,15 @@ body{padding:0 36px}
 .header-left{padding-top:0}
 .name{font-family:Rubik,Arial,sans-serif;font-size:35px;line-height:1.02;font-weight:600;letter-spacing:-.4px}
 .role{font-family:Rubik,Arial,sans-serif;color:var(--blue);font-size:18px;font-weight:600;margin-top:5px}
-.contacts{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:12.5px;font-weight:600;color:#3e3e3e}
+.contacts{display:flex;gap:12px 18px;flex-wrap:wrap;margin-top:12px;font-size:12.5px;font-weight:600;color:#3e3e3e;max-width: 800px;}
 .contact{display:flex;align-items:center;gap:5px;white-space:nowrap}
 .contact .ico{color:var(--blue);font-size:14px;font-weight:700}
 .contact a{color:inherit;text-decoration:none}
-.contact a:hover{text-decoration:underline}
+.contact a:hover{text-decoration:underline;color:var(--blue)}
 .initials{
  width:128px;height:128px;border-radius:50%;background:var(--blue);
  display:flex;align-items:center;justify-content:center;font-family:Rubik,Arial,sans-serif;
- font-size:39px;font-weight:500;color:#000;margin-right:0
+ font-size:39px;font-weight:500;color:#000;margin-right:0;flex-shrink:0;
 }
 .columns{display:grid;grid-template-columns:minmax(0,60%) minmax(0,40%);gap:36px}
 .section{margin-bottom:11px}
@@ -41,10 +41,12 @@ body{padding:0 36px}
 .job:last-child{border-bottom:0}
 .job-title{font-family:Rubik,Arial,sans-serif;font-size:15.5px;font-weight:600;line-height:18px}
 .company{color:var(--blue);font-family:Rubik,Arial,sans-serif;font-size:15.5px;font-weight:600;margin-top:4px;line-height:18px}
-.meta{font-size:11.5px;color:#444;margin-top:4px;display:flex;gap:7px;align-items:center}
+.meta{font-size:11.5px;color:#444;margin-top:4px;display:flex;gap:7px;align-items:center;line-height:14px}
 .meta .micon{font-size:12px;color:#555}
+.meta a{color:var(--blue);text-decoration:none;font-weight:600}
+.meta a:hover{text-decoration:underline}
 .job ul{margin:4px 0 0 18px;padding:0}
-.job li{font-size:12px;line-height:14.5px;margin:1px 0;padding-left:1px}
+.job li{font-size:12px;line-height:14.5px;margin:2px 0;padding-left:1px}
 .degree{margin-bottom:7px}
 .degree-title{font-family:Rubik,Arial,sans-serif;font-size:15px;font-weight:600;line-height:18px}
 .degree-school{color:var(--blue);font-family:Rubik,Arial,sans-serif;font-size:14.5px;font-weight:600;line-height:18px;margin-top:3px}
@@ -61,8 +63,8 @@ body{padding:0 36px}
 @media(max-width:800px){
  body{padding:0}
  .resume{padding:18px 22px;min-height:auto}
- .header{min-height:125px}
- .initials{width:100px;height:100px;font-size:30px}
+ .header{min-height:auto;flex-direction:column-reverse;gap:20px}
+ .initials{width:80px;height:80px;font-size:24px}
  .columns{grid-template-columns:1fr;gap:18px}
  .contacts{gap:8px 14px}
 }
@@ -81,8 +83,11 @@ body{padding:0 36px}
     <div class="role">AI Video Creator</div>
     <div class="contacts">
       <div class="contact"><span class="ico">@</span><a href="mailto:lakhwinderdasslakha10@gmail.com">lakhwinderdasslakha10@gmail.com</a></div>
-      <div class="contact"><span class="ico">↗</span><a href="https://lakhamohit.github.io/lakhamohit" target="_blank">lakhamohit.github.io/lakhamohit</a></div>
-      <div class="contact"><span class="ico">↗</span><a href="https://linkedin.com/in/er-mohit-lakha" target="_blank">linkedin.com/in/er-mohit-lakha</a></div>
+      <div class="contact"><span class="ico">in</span><a href="https://www.linkedin.com/in/er-mohit-lakha" target="_blank">linkedin.com/in/er-mohit-lakha</a></div>
+      <div class="contact"><span class="ico">↗</span><a href="https://lakhamohit.github.io/lakhamohit/" target="_blank">Main Portfolio</a></div>
+      <div class="contact"><span class="ico">↗</span><a href="https://lakhamohit.github.io/ml-developer-portfolio/" target="_blank">Developer Portfolio</a></div>
+      <div class="contact"><span class="ico">R<sup>G</sup></span><a href="https://www.researchgate.net/profile/Mohit-Lakha" target="_blank">ResearchGate Profile</a></div>
+      <div class="contact"><span class="ico">iD</span><a href="https://orcid.org/0000-0002-5806-6737" target="_blank">ORCID: 0000-0002-5806-6737</a></div>
     </div>
   </div>
   <div class="initials">ML</div>
@@ -92,90 +97,121 @@ body{padding:0 36px}
 <section class="left">
 
   <div class="section">
-    <h2 class="section-title">Summary</h2>
-    <div class="summary">Deep technical background. Obsessed with high-value AI and engineering logic. I map the rigorous discipline of an M.Tech Power Engineer into bleeding-edge Generative AI and LLM training. I am always hunting for the next massive technical challenge, building premium-tier solutions for high-stakes environments</div>
+    <h2 class="section-title">Professional Summary</h2>
+    <div class="summary">Deep technical background. Obsessed with high-value AI and engineering logic. I map the rigorous discipline of an M.Tech Power Engineer into bleeding-edge Generative AI and LLM training. I am always hunting for the next massive technical challenge, building premium-tier solutions for high-stakes environments.</div>
   </div>
 
   <div class="section">
-    <h2 class="section-title">Experience</h2>
+    <h2 class="section-title">Professional Experience</h2>
 
     <article class="job">
       <div class="job-title">A.I. Video Creator</div>
-      <div class="company">HIKK Entertainment Private Limited</div>
-      <div class="meta"><span class="micon">▣</span>02/2026 - Present <span class="micon">●</span>Noida, Uttar Pradesh, India</div>
+      <div class="company">HKK Entertainment Private Limited</div>
+      <div class="meta"><span class="micon">▣</span>Feb 2026 – Present <span class="micon">●</span>Noida, Uttar Pradesh, India</div>
       <ul>
-        <li>Collaborate within a 7-member studio team to rapidly produce cinematic video episodes and highly detailed movie shots from scripts within tight 2-3 day turnaround cycles</li>
-        <li>Engineer precise, structured prompts across multiple AI platforms (Kling 3.0, Higgsfield A.I., Google Flow) to maintain strict visual continuity, accurate character wardrobes, and distinct artistic styles</li>
-        <li>Direct AI camera spatial positioning and lens emulation (Panavision, Kodak Vision3 35mm) to achieve cinematic quality and 8K photorealism for high-end video sequences</li>
+        <li>Collaborate within a 7-member studio team to rapidly produce cinematic video episodes and highly detailed movie shots from scripts within tight 2-3 day turnaround cycles.</li>
+        <li>Engineer precise, structured prompts across multiple AI platforms (Kling 3.0, Higgsfield A.I., Google Flow) to maintain strict visual continuity, accurate character wardrobes, and distinct artistic styles.</li>
+        <li>Direct AI camera spatial positioning and lens emulation (Panavision, Kodak Vision3 35mm) to achieve cinematic quality and 8K photorealism for high-end video sequences.</li>
       </ul>
     </article>
 
     <article class="job">
       <div class="job-title">A.I. Prompt Engineering Trainer</div>
-      <div class="company">Techfyndr India (Freelance)</div>
-      <div class="meta"><span class="micon">▣</span>05/2025 - Present <span class="micon">●</span>Hyderabad, India (Remote)</div>
+      <div class="company">Techfynder India (Freelance)</div>
+      <div class="meta"><span class="micon">▣</span>May 2025 – Present <span class="micon">●</span>Hyderabad, India (Remote)</div>
       <ul>
-        <li>Develop and facilitate interactive training modules focused on advanced prompt engineering best practices for various skill levels and industries</li>
-        <li>Customize learning journeys and provide individualized coaching to enhance prompt generation workflows</li>
+        <li>Develop and facilitate interactive training modules focused on advanced prompt engineering best practices for various skill levels and industries.</li>
+        <li>Customize learning journeys and provide individualized coaching to enhance prompt generation workflows.</li>
       </ul>
     </article>
 
     <article class="job">
       <div class="job-title">Lecturer, Electrical Engineering</div>
       <div class="company">Guru Nanak Dev Polytechnic College</div>
-      <div class="meta"><span class="micon">▣</span>08/2025 - 11/2025 <span class="micon">●</span>Ludhiana, Punjab, India</div>
+      <div class="meta"><span class="micon">▣</span>Aug 2025 – Nov 2025 <span class="micon">●</span>Ludhiana, Punjab, India</div>
       <ul>
-        <li>Delivered theoretical and practical instruction in electrical engineering subjects, connecting classroom concepts with real-world applications and future career opportunities</li>
-        <li>Led and encouraged student participation in technical festivals and academic activities</li>
-        <li>Guided final-year students in developing complex project ideas, technical documentation, and project presentations</li>
+        <li>Delivered theoretical and practical instruction in electrical engineering subjects, connecting classroom concepts with real-world applications and future career opportunities.</li>
+        <li>Led and encouraged student participation in technical festivals and academic activities.</li>
+        <li>Guided final-year students in developing complex project ideas, technical documentation, and project presentations.</li>
       </ul>
     </article>
 
     <article class="job">
       <div class="job-title">Math A.I. Trainer</div>
       <div class="company">Outlier</div>
-      <div class="meta"><span class="micon">▣</span>10/2024 - 03/2025 <span class="micon">●</span>Remote</div>
+      <div class="meta"><span class="micon">▣</span>Oct 2024 – Mar 2025 <span class="micon">●</span>Remote</div>
       <ul>
-        <li>Trained and refined LLMs and AI models to significantly improve mathematical problem-solving logic and capabilities</li>
+        <li>Trained and refined LLMs and AI models to significantly improve mathematical problem-solving logic and capabilities.</li>
       </ul>
     </article>
 
     <article class="job">
       <div class="job-title">Lecturer, Electrical Engineering</div>
       <div class="company">CTIEMT and CTPC</div>
-      <div class="meta"><span class="micon">▣</span>08/2023 - 04/2024 <span class="micon">●</span>Jalandhar, Punjab, India</div>
+      <div class="meta"><span class="micon">▣</span>Aug 2023 – Apr 2024 <span class="micon">●</span>Jalandhar, Punjab, India</div>
       <ul>
-        <li>Delivered theoretical and practical instruction to undergraduate and diploma students in core electrical engineering subjects, with an emphasis on laboratory applications and hands-on learning</li>
-        <li>Guided students in applying electrical engineering concepts to practical problems and developing a stronger understanding of industry-relevant applications</li>
+        <li>Delivered theoretical and practical instruction to undergraduate and diploma students in core electrical engineering subjects, with an emphasis on laboratory applications and hands-on learning.</li>
+        <li>Guided students in applying electrical engineering concepts to practical problems and developing a stronger understanding of industry-relevant applications.</li>
       </ul>
     </article>
   </div>
+
+  <div class="section">
+    <h2 class="section-title">Published Research Papers</h2>
+
+    <article class="job">
+      <div class="job-title">Research Paper: "Power Flow Improvement by Designing and Simulating a Unified Power Flow Controller with Solar Power: A Case Study"</div>
+      <div class="company">International Journal for Scientific Research &amp; Development (IJSRD), Vol. 8, Issue 11</div>
+      <div class="meta">
+        <span class="micon">▣</span>Paper ID: IJSRDV8I110211 
+        <span class="micon">●</span><a href="https://www.ijsrd.com/articles/IJSRDV8I110211.pdf" target="_blank">View PDF Link</a>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="job-title">Research Paper: "Design and Simulation of a Scalable Green Hydrogen System Powered by Solar Energy"</div>
+      <div class="company">International Journal of Research Publication and Reviews (IJRPR), Vol. 4, Issue 6</div>
+      <div class="meta">
+        <span class="micon">▣</span>Paper ID: IJRPR14208 
+        <span class="micon">●</span><a href="https://ijrpr.com/uploads/V4ISSUE6/IJRPR14208.pdf" target="_blank">View PDF Link</a>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="job-title">M.Tech Dissertation Research: "Enhancement of Power Transfer Capability of Interconnected Power System Using UPFC"</div>
+      <div class="meta">
+        <span class="micon">▣</span>Focus: Modeled and simulated a 20-bus test system using MATLAB/Simulink to optimize active and reactive power transfer limits under varying load conditions.
+      </div>
+    </article>
+  </div>
+
+</section>
+
+<aside class="right">
 
   <div class="section">
     <h2 class="section-title">Education</h2>
     <article class="degree">
       <div class="degree-title">Master of Technology (M.Tech) - Power Engineering</div>
       <div class="degree-school">Guru Nanak Dev Engineering College, Ludhiana</div>
-      <div class="meta"><span class="micon">▣</span>2021 - 2022 <span style="margin-left:22px">CGPA</span></div>
+      <div class="meta"><span class="micon">▣</span>2021 – 2023 <span style="margin-left:22px">8.06 CGPA</span></div>
     </article>
     <article class="degree">
       <div class="degree-title">Bachelor of Engineering (B.E) - Electrical Engineering</div>
       <div class="degree-school">Chandigarh University, Mohali</div>
-      <div class="meta"><span class="micon">▣</span>2017 - 2021</div>
+      <div class="meta"><span class="micon">▣</span>2017 – 2021 <span style="margin-left:22px">6.65 CGPA</span></div>
     </article>
   </div>
-</section>
 
-<aside class="right">
   <div class="section">
-    <h2 class="section-title">Skills</h2>
+    <h2 class="section-title">Core Competencies &amp; Skills</h2>
 
     <div class="skill-group">
       <div class="skill-heading">Generative AI &amp; Video Production</div>
       <div class="skills">
         <span class="skill">Kling AI</span><span class="skill">Kling 3.0</span><span class="skill">Omni</span><span class="skill">Ultra</span>
-        <span class="skill">Higgsfield A.I.</span><span class="skill">Nano Banana Pro</span>
-        <span class="skill">Seeddance</span><span class="skill">Soul 2.0</span><span class="skill">Cinema Studio</span>
+        <span class="skill">Higgsfield A.I.</span><span class="skill">Nano Banana Pro</span><span class="skill">Seeddance</span>
+        <span class="skill">Soul 2.0 / Cinema Studio</span><span class="skill">etcetera</span>
         <span class="skill">Google Flow</span><span class="skill">Text-to-Video</span>
         <span class="skill">Image-to-Video</span><span class="skill">Fine-Tuning</span>
         <span class="skill">Comic Designing</span><span class="skill">Pre, Post Editing</span>
@@ -210,8 +246,7 @@ body{padding:0 36px}
       <div class="skills">
         <span class="skill">MATLAB/SIMULINK</span>
         <span class="skill">C Programming</span>
-        <span class="skill">CAD</span>
-        <span class="skill">Technical Drawing</span>
+        <span class="skill">CAD / Technical Drawing</span>
         <span class="skill">Circuit Design</span>
         <span class="skill">Power Systems</span>
       </div>
@@ -221,12 +256,25 @@ body{padding:0 36px}
       <div class="skill-heading">Training &amp; Education</div>
       <div class="skills">
         <span class="skill">Curriculum Development</span>
-        <span class="skill">AI &amp; Automation Training</span>
+        <span class="skill">AI Automation Training</span>
         <span class="skill">Model Refinement</span>
+        <span class="skill">Mentorship</span>
         <span class="skill">Remote LMS Tools</span>
       </div>
     </div>
   </div>
+
+  <div class="section">
+    <h2 class="section-title">Languages</h2>
+    <div class="skill-group" style="border:none">
+      <div class="skills" style="margin-top:10px;">
+        <span class="skill">English (B1–B2)</span>
+        <span class="skill">Punjabi (Native)</span>
+        <span class="skill">Hindi (Native)</span>
+      </div>
+    </div>
+  </div>
+
 </aside>
 </div>
 </main>
